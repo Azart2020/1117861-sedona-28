@@ -84,11 +84,32 @@
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="button" type="button">Поиск гостиницы в седоне</button>
-      <!-- здесь будет форма-->
-    </section>
+      <button class="button" type="button">Поиск гостиницы в Cедоне</button>      
+    
+    <div>
+      <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+      <label for="arrival-date">Дата заезда:</label>
+      <input id="arrival-date" type="text" name="arrival">
+    </p>
+      <p>
+      <label for="departure-date">Дата выезда:</label>
+      <input id="departure-date" type="text" name="departure">
+    </p>
+      <p>
+      <label for="adults">Взрослые:</label>
+      <input id="adults" type="text" name="adults-number">
+    </p>
+      <p>
+      <label for="childs">Дети:</label>
+      <input id="childs" type="text" name="childs-number">
+    </p>
+      <button class="button" type="submit">Найти</button>      
+    </form>
+    </div>
+  </section>
     <section>
-      <h2>карта</h2>
+      <h2 class="visually-hidden">Карта</h2>
     </section>
   </main>
   <footer>
