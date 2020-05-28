@@ -30,6 +30,7 @@ html {
 }
 
 body {
+  position: relative;
   min-width: 1200px;
   margin: 0;
   padding: 0;
@@ -199,6 +200,7 @@ img {
 }
 
 .form-container {
+  display: none;
   width: 568px;
   background-color: var(--basic-white);
   margin: 0 auto;
@@ -225,9 +227,9 @@ img {
 
 .button-open-form {
   display: block;
-  margin: 0 auto;
   width: 568px;
   min-height: 86px;
+  margin: 0 auto;
   font-size: 21px;
   line-height: 26px;
   background-color: var(--basic-brown);
@@ -291,9 +293,13 @@ img {
   background-image: url("../img/background-map.png");
 }
 
-.main-footer {
+.index-footer {
+  position: absolute;
+  bottom: 0;
+  min-width: 1200px;
   color: var(--basic-black);
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
+
 }
 
 .subtitle {
@@ -314,43 +320,51 @@ img {
   list-style: none;
 }
 
-.social-button{
+.social-button {
+  display: inline-block;
   width: 46px;
   height: 48px;
   padding: 15px;
-  display: inline-block;
   background-color: var(--basic-blue);
 }
 
 .social-button:hover {
-  background-color:var(--basic-light-blue);}
-.social-button:focus  {
   background-color: var(--basic-light-blue);
 }
-.social-button:active  {
+
+.social-button:focus {
+  background-color: var(--basic-light-blue);
+}
+
+.social-button:active {
   background-color: var(--basic-dark-blue);
 }
-.icon-twitter{
-	width: 17px;
-	height: 17px;
-	background-image: url("../img/icon-twitter.svg");
+
+.icon-twitter {
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/icon-twitter.svg");
 }
-.icon-facebook{
-	width: 12px;
-	height: 22px;
-	background-image: url("../img/icon-fb.svg");
+
+.icon-facebook {
+  width: 12px;
+  height: 22px;
+  background-image: url("../img/icon-fb.svg");
 }
-.icon-youtube{
-	width: 20px;
-	height: 16px;
-	background-image: url("../img/icon-youtube.svg");
+
+.icon-youtube {
+  width: 20px;
+  height: 16px;
+  background-image: url("../img/icon-youtube.svg");
 }
+
 .website {
   width: 115px;
   height: 41px;
   background-image: url("../img/logo-htmlacademy.png");
   background-repeat: no-repeat;
 }
+
 .website:focus,
 .website:hover {
   background-image: url("../img/logo-htmlacademy-blue.png");
@@ -370,15 +384,15 @@ img {
   background-color: var(--basic-blue)
 }
 
-}
 
-.filter-form legend{
+.filter-form legend {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
   color: var(--basic-white);
 
 }
+
 .filter-form fieldset {
   padding: 0;
   margin: 0;
@@ -397,10 +411,11 @@ img {
   background-color: transparent;
   border: 2px solid var(--basic-white);
 }
+
 .button-filter:hover,
-.button-filter:focus{
-  background-color:var(--basic-white);
-  color:var(--basic-black);
+.button-filter:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 
 
@@ -505,12 +520,13 @@ img {
   background-image: url("../img/star.png");
   background-repeat: no-repeat;
 }
-.raiting{
-	display: inline-block;
-	width: 110px;
-	height:27px;
-	line-height: 27px;
-	vertical-align: middle;
-	text-align: center;
-	background-color:var(--basic-extra-gray);
+
+.raiting {
+  display: inline-block;
+  width: 110px;
+  height: 27px;
+  line-height: 27px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: var(--basic-extra-gray);
 }
