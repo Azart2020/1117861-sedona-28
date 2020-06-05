@@ -660,8 +660,11 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
+
 .range-toggle:hover {
   background: #1c4f80;
+  width: 4px;
+  height: 4px;
 }
 
 .range-toggle-min {
