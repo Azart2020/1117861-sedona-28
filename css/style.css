@@ -30,6 +30,8 @@ html {
 }
 
 body {
+  position: relative;
+
   min-width: 1200px;
   margin: 0;
   padding: 0;
@@ -40,7 +42,6 @@ body {
   color: var(--basic-black);
   background-color: var(--basic-extra-gray);
   text-transform: uppercase;
-  position: relative;
 }
 
 a {
@@ -73,20 +74,20 @@ input[type="radio"].visually-hidden {
 
 
 .logo {
+  position: absolute;
   width: 138px;
   height: 70px;
-  position: absolute;
   left: calc(50% - 69px);
 }
 
 .nav-list {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  list-style: none;
+  width: 100%;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 .nav-list a {
@@ -123,7 +124,8 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin: 0 auto;
   background-color: var(--basic-white);
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);}
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
 
 .slogan {
   font-size: 21px;
@@ -146,9 +148,9 @@ input[type="radio"].visually-hidden {
 .reason-list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 
 }
 
@@ -239,12 +241,11 @@ input[type="radio"].visually-hidden {
 }
 
 .open-for-block {
-  min-height: 125px;
   position: relative;
+  min-height: 125px;
 }
 
 .form-container {
-  /* display: none;*/
   position: absolute;
   left: calc(50% - 284px);
   width: 568px;
@@ -336,8 +337,8 @@ input[type="radio"].visually-hidden {
 
 .half-width {
   display: flex;
-  margin-left: 15px;
   flex-shrink: 0;
+  margin-left: 15px;
 }
 
 .button-add {
@@ -372,9 +373,9 @@ input[type="radio"].visually-hidden {
 
 .search-house-item {
   display: flex;
+  align-items: center;
   margin-bottom: 29px;
   font-size: 14px;
-  align-items: center;
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-light-black);
@@ -435,16 +436,16 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  min-height: 150px;
   align-items: center;
+  min-height: 150px;
 }
 
 .footer-right {
-  width: 196px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  width: 196px;
 }
 
 .subtitle {
@@ -464,13 +465,13 @@ input[type="radio"].visually-hidden {
 }
 
 .social-list {
-  width: 150px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .social-button {
@@ -511,8 +512,9 @@ input[type="radio"].visually-hidden {
   width: 1055px;
   margin: 0 auto;
 }
-.out{
-	border-bottom: 1px solid var(--basic-silver)
+
+.wrapper-out {
+  border-bottom: 1px solid var(--basic-silver)
 }
 
 .form-filter-search {
@@ -571,13 +573,13 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
+  left: -30px;
+  top: -2px;
 
   width: 23px;
   height: 23px;
   border: 2px solid var(--basic-white);
   border-radius: 5px;
-  left: -30px;
-  top: -2px;
   cursor: pointer;
 }
 
@@ -589,12 +591,12 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox+label:hover::before {
   content: "";
   position: absolute;
+  left: -30px;
+  top: -2px;
 
   width: 23px;
   height: 23px;
 
-  left: -30px;
-  top: -2px;
 
   border: 2px solid var(--basic-white);
   border-radius: 5px;
@@ -656,8 +658,8 @@ input[type="radio"].visually-hidden {
 
 .filter-range {
   display: block;
-  height: 160px;
   width: 315px;
+  height: 160px;
   margin-left: auto;
   color: #ffffff;
   text-transform: uppercase;
@@ -744,7 +746,6 @@ input[type="radio"].visually-hidden {
 .range-toggle {
   position: absolute;
   top: -8px;
-
   width: 4px;
   height: 4px;
 
@@ -754,7 +755,8 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
-.range-toggle:hover{
+
+.range-toggle:hover {
   border: 10px solid #ffffff;
   top: -10px;
 
@@ -774,7 +776,6 @@ input[type="radio"].visually-hidden {
 .range-toggle-max {
   left: 80%;
 }
-
 
 .button-filter {
   display: block;
@@ -797,13 +798,13 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-list {
-  width: 358px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
+  width: 358px;
   margin: 0;
   padding: 0;
+  justify-content: space-between;
+  list-style: none;
 }
 
 .sorting-item {
@@ -874,17 +875,20 @@ input[type="radio"].visually-hidden {
 
 .column {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .column-left {
-  margin-right: 6px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  margin-right: 6px;
 }
 
 .column-right {
 
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
