@@ -10,7 +10,7 @@
 </head>
 
 <body class="page-body">
-  <div class="container">
+  <div class="container-main">
     <header>
       <nav class="main-navigation">
         <a class="logo" href="index.html">
@@ -84,130 +84,142 @@
               <div class="range-toggle range-toggle-min"></div>
               <div class="range-toggle range-toggle-max"></div>
             </div>
+            <button class="button button-filter" type="submit">Показать</button>
           </div>
-          <button class="button button-filter" type="submit">Показать</button>
         </form>
       </section>
       <section>
-        <div class="wrapper">
-          <h2 class="visually-hidden">Результаты поиска</h2>
-          <div class="sorting">
-            <span class="subtitle">Найдено:3</span>
-            <ul class="sorting-list">
-              <li class="sorting-item">
-                <span>Сортировка:</span>
-              </li>
-              <li class="sorting-item">
-                <a href="#">По цене</a>
-              </li>
-              <li class="sorting-item">
-                <a href="#">По типу</a>
-              </li>
-              <li class="sorting-item">
-                <a href="#">По рейтингу</a>
-              </li>
-            </ul>
-            <ul class="direction">
-              <li>
-                <a class="arrow" href="#">
-                  <span class="visually-hidden">По возрастанию</span>
-                  &#9650;
-                </a>
-              </li>
-              <li>
-                <a class="arrow" href="#">
-                  <span class="visually-hidden">По убыванию</span>
-                  &#9660;
-                </a>
-              </li>
-            </ul>
+        <div class="out">
+          <div class="wrapper">
+            <h2 class="visually-hidden">Результаты поиска</h2>
+            <div class="sorting">
+              <span class="subtitle">Найдено: &nbsp; 3</span>
+              <ul class="sorting-list">
+                <li class="sorting-item">
+                  <span>Сортировка:</span>
+                </li>
+                <li class="sorting-item">
+                  <a href="#">По цене</a>
+                </li>
+                <li class="sorting-item">
+                  <a href="#">По типу</a>
+                </li>
+                <li class="sorting-item">
+                  <a href="#">По рейтингу</a>
+                </li>
+              </ul>
+              <ul class="direction">
+                <li>
+                  <a class="arrow" href="#">
+                    <span class="visually-hidden">По возрастанию</span>
+                    &#9650;
+                  </a>
+                </li>
+                <li>
+                  <a class="arrow" href="#">
+                    <span class="visually-hidden">По убыванию</span>
+                    &#9660;
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="wrapper">
-          <ul class="house-list">
-            <li class="house-item">
-              <img src="img/illustration-amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
-              <div class="wrapper-house-item">
-                <h3 class="small-title"><a href="#">Amara Resort & Spa</a></h3>
-                <div class="column">
-                  <div class="column-left">
-                    <span>Гостиница</span>
-                    <button class="button button-more">Подробнее</button>
-                  </div>
-                  <div class="column-right">
-                    <span>От 4000 Р.</span>
-                    <button class="button button-order">Забронировать</button>
-                  </div>
-                </div>
-              </div>
-              <div class="raiting-info">
-                <div>
-                  <ul class="star-list">
-                    <li class="star-item"><span class="visually-hidden">4 звезды</span></li>
-                    <li class="star-item"></li>
-                    <li class="star-item"></li>
-                    <li class="star-item"></li>
-                  </ul>
-                </div>
-                <span class="raiting">Рейтинг: 8,5</span>
-              </div>
-            </li>
-            <li class="house-item">
-              <img src="img/illustration-desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
-              <div class="wrapper-house-item">
-                <h3 class="small-title"><a href="#">Desert Quail Inn</a></h3>
-                <div class="column">
-                  <div class="column-left">
-                    <span>Мотель</span>
-                    <button class="button button-more">Подробнее</button>
-                  </div>
-                  <div class="column-right">
-                    <span>От 3000 Р.</span>
-                    <button class="button button-order">Забронировать</button>
+        <ul class="house-list">
+          <div class="out">
+            <div class="wrapper">
+              <li class="house-item">
+                <img src="img/illustration-amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
+                <div class="wrapper-house-item">
+                  <h3 class="small-title"><a href="#">Amara Resort & Spa</a></h3>
+                  <div class="column">
+                    <div class="column-left">
+                      <span>Гостиница</span>
+                      <button class="button button-more">Подробнее</button>
+                    </div>
+                    <div class="column-right">
+                      <span>От 4000 Р.</span>
+                      <button class="button button-order">Забронировать</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="raiting-info">
-                <div>
-                  <ul class="star-list">
-                    <li class="star-item"><span class="visually-hidden">3 звезды</span></li>
-                    <li class="star-item"></li>
-                    <li class="star-item"></li>
-                  </ul>
-                </div>
-                <span class="raiting">Рейтинг: 8,9</span>
-              </div>
-            </li>
-            <li class="house-item">
-              <img src="img/illustration-villas.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
-              <div class="wrapper-house-item">
-                <h3 class="small-title"><a href="#">Villas at Poco Diablo</a></h3>
-                <div class="column">
-                  <div class="column-left">
-                    <span>Апартаменты</span>
-                    <button class="button button-more">Подробнее</button>
+                <div class="raiting-info">
+                  <div>
+                    <ul class="star-list">
+                      <li class="star-item"><span class="visually-hidden">4 звезды</span></li>
+                      <li class="star-item"></li>
+                      <li class="star-item"></li>
+                      <li class="star-item"></li>
+                    </ul>
                   </div>
-                  <div class="column-right">
-                    <span>От 2000 Р.</span>
-                    <button class="button button-order">Забронировать</button>
+                  <span class="raiting">Рейтинг: 8,5</span>
+                </div>
+              </li>
+            </div>
+          </div>
+          <div class="out">
+            <div class="wrapper">
+              <li class="house-item">
+                <img src="img/illustration-desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
+                <div class="wrapper-house-item">
+                  <h3 class="small-title"><a href="#">Desert Quail Inn</a></h3>
+                  <div class="column">
+                    <div class="column-left">
+                      <span>Мотель</span>
+                      <button class="button button-more">Подробнее</button>
+                    </div>
+                    <div class="column-right">
+                      <span>От 3000 Р.</span>
+                      <button class="button button-order">Забронировать</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="raiting-info">
-                <div>
-                  <ul class="star-list">
-                    <li class="star-item"><span class="visually-hidden">2 звезды</span></li>
-                    <li class="star-item"></li>
-                  </ul>
+                <div class="raiting-info">
+                  <div>
+                    <ul class="star-list">
+                      <li class="star-item"><span class="visually-hidden">3 звезды</span></li>
+                      <li class="star-item"></li>
+                      <li class="star-item"></li>
+                    </ul>
+                  </div>
+                  <span class="raiting">Рейтинг: 8,9</span>
                 </div>
-                <span class="raiting">Рейтинг: 9,2</span>
-              </div>
-            </li>
-          </ul>
-        </div>
+              </li>
+            </div>
+          </div>
+          <div class="out">
+            <div class="wrapper">
+              <li class="house-item">
+                <img src="img/illustration-villas.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
+                <div class="wrapper-house-item">
+                  <h3 class="small-title"><a href="#">Villas at Poco Diablo</a></h3>
+                  <div class="column">
+                    <div class="column-left">
+                      <span>Апартаменты</span>
+                      <button class="button button-more">Подробнее</button>
+                    </div>
+                    <div class="column-right">
+                      <span>От 2000 Р.</span>
+                      <button class="button button-order">Забронировать</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="raiting-info">
+                  <div>
+                    <ul class="star-list">
+                      <li class="star-item"><span class="visually-hidden">2 звезды</span></li>
+                      <li class="star-item"></li>
+                    </ul>
+                  </div>
+                  <span class="raiting">Рейтинг: 9,2</span>
+                </div>
+              </li>
+            </div>
+          </div>
+        </ul>
       </section>
     </main>
-    <footer class="index-footer footer">
+    <footer class="footer">
       <div class="wrapper-footer">
         <div class="wrapper-info">
           <span class="subtitle">#visitSEDONA</span>
@@ -242,7 +254,7 @@
           </a>
         </div>
       </div>
-  </footer>
+    </footer>
   </div>
 </body>
 
