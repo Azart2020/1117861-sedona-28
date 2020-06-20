@@ -1,0 +1,29 @@
+
+let form = document.querySelector(".form-container");
+let buttonForm = document.querySelector(".button-open-form");
+let searchForm = document.querySelector(".search-form");
+let inputDate = document.querySelector(".input-date");
+let inputNumber = document.querySelector(".input-number");
+
+buttonForm.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  form.classList.toggle('modal-hidden');
+  form.classList.toggle('modal-open');
+});
+
+
+searchForm.addEventListener("submit", function (evt) {
+	if (!inputDate.value || !inputNumber.value) {
+    evt.preventDefault();
+  }
+});
+
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (form.classList.contains("modal-open")) {
+      evt.preventDefault();
+      form.classList.remove("modal-open");
+    }
+  }
+});

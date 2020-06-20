@@ -14,24 +14,24 @@
     <header class="header">
       <nav class="page-nav">
         <div class="wrapper-navigation">
-        <a class="logo">
-          <img  src="img/logo-index.png" width="138" height="70" alt="Логотип Sedona">
-        </a>
-        <ul class="page-menu-list">
-          <li class="page-menu-item page-menu-left ">
-            <a href="blank.html">Информация</a>
-          </li>
-          <li class="page-menu-item page-menu-left">
-            <a href="blank.html">Фото и видео</a>
-          </li>
-          <li class="page-menu-item page-menu-right ">
-            <a class="" href="blank.html">Карта штата</a>
-          </li>
-          <li class="page-menu-item page-menu-right">
-            <a href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-      </div>
+          <a class="logo">
+            <img src="img/logo-index.png" width="138" height="70" alt="Логотип Sedona">
+          </a>
+          <ul class="page-menu-list">
+            <li class="page-menu-item page-menu-left ">
+              <a href="blank.html">Информация</a>
+            </li>
+            <li class="page-menu-item page-menu-left">
+              <a href="blank.html">Фото и видео</a>
+            </li>
+            <li class="page-menu-item page-menu-right ">
+              <a class="" href="blank.html">Карта штата</a>
+            </li>
+            <li class="page-menu-item page-menu-right">
+              <a href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -42,7 +42,7 @@
       <section>
         <h2 class="visually-hidden">Причины посетить Седону</h2>
         <p class="slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="reasons-text">Рассмотрим 5 причин,  по которым Седона круче, чем гранд каньон!</p>
+        <p class="reasons-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="reason-list">
           <li class="reason-item reason-item-blue">
             <h3 class="reason-title">Настоящий городок</h3>
@@ -92,27 +92,27 @@
           <p class="search-house-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
         </div>
         <a class="button button-open-form" href="form.html">Поиск гостиницы в Cедоне</a>
-        <div class="form-container">
-          <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-container modal-open">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="search-house-item input-arrival-date">
               <label for="arrival-date">Дата заезда:</label>
-              <input class="input-date" id="arrival-date" type="text" name="arrival">
+              <input class="input-date" placeholder="24 апреля 2017" id="arrival-date" type="text" name="arrival">
             </div>
             <div class="search-house-item input-departure-date">
               <label for="departure-date">Дата выезда:</label>
-              <input class="input-date" id="departure-date" type="text" name="departure">
+              <input class="input-date" placeholder="4 июля 2017" id="departure-date" type="text" name="departure">
             </div>
             <div class="wrapper-amount">
               <div class="search-house-item amount-left">
                 <label for="adults">Взрослые:</label>
                 <button type="button" class="button button-subtract">&#8211;</button>
-                <input class="input-number" id="adults" type="text" name="adults-number">
+                <input class="input-number" placeholder="2" id="adults" type="text" name="adults-number">
                 <button type="button" class="button button-add">+</button>
               </div>
               <div class="search-house-item amount-right">
                 <label for="childs">Дети:</label>
                 <button type="button" class="button button-subtract">&#8211;</button>
-                <input class="input-number" id="childs" type="text" name="childs-number">
+                <input class="input-number" placeholder="0" id="childs" type="text" name="childs-number">
                 <button type="button" class="button button-add">+</button>
               </div>
             </div>
@@ -129,7 +129,7 @@
         <div class="wrapper-info">
           <span class="subtitle">#visitSEDONA</span>
           <p class="telephone">
-            <a  href="tel:+78122757575">Тел: +7(495) 666-02-66</a>
+            <a href="tel:+78122757575">Тел: +7(495) 666-02-66</a>
           </p>
         </div>
         <ul class="social-list">
@@ -159,6 +159,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
