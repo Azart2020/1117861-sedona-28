@@ -77,37 +77,39 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 138px;
   height: 70px;
-  margin:0 auto;
+  margin: 0 auto;
   right: 0;
   left: 0;
 }
+
 .wrapper-navigation {
   width: 1055px;
   margin: 0 auto;
 }
-.page-menu-list{
+
+.page-menu-list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.page-menu-left{
-  margin-right: 146px;
-text-align: left;}
 
-.page-menu-right{
-  margin-left: auto;
+.page-menu-item {
+  width: 24%;
+  padding: 15px 0;
+}
+
+.page-menu-left {
+  text-align: left;
+}
+
+.page-menu-right {
   text-align: right;
 }
 
-
-.page-menu-item:last-child{
-  margin-left:163px;
-}
-.page-menu-item a{
-  display: block;
-  padding: 15px 0;
+.page-menu-item a {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -133,7 +135,7 @@ text-align: left;}
     url("../img/title-welcome.png"),
     url("../img/background-title.jpg");
   background-repeat: no-repeat;
-  background-position: bottom -1px center, center 75px, center;
+  background-position: bottom -1px center, center 76px, center;
 }
 
 .container-main {
@@ -148,8 +150,8 @@ text-align: left;}
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  margin-top: 57px;
-  margin-bottom: 29px;
+  margin-top: 59px;
+  margin-bottom: 27px;
   padding: 0 370px;
 }
 
@@ -264,7 +266,7 @@ text-align: left;}
 
 .form-container {
   position: absolute;
-  left:0;
+  left: 0;
   right: 0;
   margin: 0 auto;
   width: 568px;
@@ -273,10 +275,12 @@ text-align: left;}
   margin: 0 auto;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
-.modal-hidden{
+
+.modal-hidden {
   display: none;
 }
-.modal-open{
+
+.modal-open {
   display: block;
   animation: bounce 0.6s;
 }
@@ -284,7 +288,7 @@ text-align: left;}
 
 .search-house-info {
   margin-top: 0;
-  margin-bottom: 47px;
+  margin-bottom: 45px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400 color: var(--basic-light-black);
@@ -338,10 +342,11 @@ text-align: left;}
   background-position: right 10px top 7px;
   border: none;
   text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
 
 }
+
 input::placeholder {
   color: var(--basic-black);
   font-size: 14px;
@@ -420,8 +425,8 @@ input::placeholder {
 
 .button-subtract {
   font-size: 29px;
-    padding: 0px 11px;
-    padding-bottom: 7px;
+  padding: 0px 11px;
+  padding-bottom: 7px;
 }
 
 .button-add:hover,
@@ -497,12 +502,14 @@ input::placeholder {
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.8);
 }
+
 .footer-right {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-left: auto;
+  margin-bottom: 8px;
   width: 196px;
 }
 
@@ -521,7 +528,8 @@ input::placeholder {
   justify-content: space-between;
   width: 150px;
   margin: 0;
-  margin-left: 176px;
+  margin-left: 172px;
+  margin-bottom: 8px;
   padding: 0;
   list-style: none;
 }
@@ -579,7 +587,7 @@ input::placeholder {
   align-items: center;
   width: 1000px;
   margin: 0 auto;
-  min-height: 122px;
+  min-height: 128px;
 }
 
 
@@ -587,9 +595,16 @@ input::placeholder {
   border-bottom: 1px solid var(--basic-silver)
 }
 
-.wrapper-info{
-  margin-left:24px;
+.wrapper-info-index {
+  margin-left: 24px;
+  margin-bottom: 8px;   
+   margin-right: 4px;
 }
+.wrapper-info {
+  margin-left: 29px;
+  margin-bottom: 8px;
+}
+
 .form-filter-search {
   display: flex;
   flex-wrap: wrap;
@@ -734,7 +749,7 @@ input::placeholder {
   width: 315px;
   height: 160px;
   margin-left: auto;
-  color: #ffffff;
+  color: var(--basic-white);
   text-transform: uppercase;
 }
 
@@ -754,7 +769,7 @@ input::placeholder {
 
   font-size: 0;
 
-  border: 2px solid #ffffff;
+  border: 2px solid var(--basic-white);
   border-radius: 2px;
 }
 
@@ -767,7 +782,7 @@ input::placeholder {
   width: 2px;
   height: 22px;
 
-  background: #ffffff;
+  background: var(--basic-white);
   transform: translate(-50%, -50%);
 }
 
@@ -781,9 +796,10 @@ input::placeholder {
   cursor: pointer;
 }
 
-.price-controls .min-price{
+.price-controls .min-price {
   padding-left: 62px;
 }
+
 .price-controls .max-price {
   padding-left: 76px;
 }
@@ -815,7 +831,7 @@ input::placeholder {
   width: 80%;
   height: 2px;
 
-  background: #ffffff;
+  background: var(--basic-white);
 }
 
 .range-toggle {
@@ -824,22 +840,15 @@ input::placeholder {
   width: 4px;
   height: 4px;
 
-  background: #ababab;
-  border: 9px solid #ffffff;
+  background: var(--basic-dark-gray);
+  border: 9px solid var(--basic-white);
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
 .range-toggle:hover {
-  border: 10px solid #ffffff;
-  top: -10px;
-
-}
-
-
-.range-toggle:hover {
-  background: #1c4f80;
+  border: 10px solid var(--basic-white);
   width: 4px;
   height: 4px;
 }
@@ -854,7 +863,7 @@ input::placeholder {
 
 .button-filter {
   display: block;
-  margin-left:81px;
+  margin-left: 81px;
   padding: 6px 35px;
   background-color: transparent;
   border: 2px solid var(--basic-white);
@@ -942,8 +951,8 @@ input::placeholder {
 }
 
 .house-item {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .wrapper-house-item {
@@ -975,14 +984,19 @@ input::placeholder {
 
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 6px;
+
 }
 
 .house-item img {
-  margin-right: 29px;
+  height: 90px;
+  margin-top: 3px;
+  margin-right: 30px;
 }
 
 .small-title {
   margin: 0;
+  margin-bottom: 7px;
 }
 
 .small-title a {
@@ -1003,8 +1017,8 @@ input::placeholder {
 
 .button-more {
   background-color: var(--basic-blue);
-  margin-top: 15px;
-  padding: 4px 17px;
+  margin-top: 13px;
+  padding: 3px 17px;
 }
 
 .button-more:hover {
@@ -1018,8 +1032,8 @@ input::placeholder {
 
 .button-order {
   background-color: var(--basic-brown);
-  margin-top: 15px;
-  padding: 4px 17px;
+  margin-top: 13px;
+  padding: 3px 17px;
 }
 
 .button-order:hover {
@@ -1042,6 +1056,7 @@ input::placeholder {
   width: 19px;
   height: 17px;
   margin-left: 4px;
+  margin-top: 3px;
   background-image: url("../img/star.png");
   background-repeat: no-repeat;
 }
@@ -1064,10 +1079,12 @@ input::placeholder {
   text-align: center;
   background-color: var(--basic-extra-gray);
 }
-.telephone{
+
+.telephone {
   margin: 0;
-  margin-top:6px;
+  margin-top: 6px;
 }
+
 .telephone a {
   font-size: 21px;
   line-height: 26px;
@@ -1079,7 +1096,7 @@ input::placeholder {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translateY(-150px);
   }
 
   70% {
@@ -1094,5 +1111,3 @@ input::placeholder {
     transform: translateY(0px);
   }
 }
-
-

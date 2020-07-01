@@ -15,15 +15,15 @@ buttonForm.addEventListener("click", function (evt) {
 searchForm.addEventListener("submit", function (evt) {
 	if (!inputDate.value || !inputNumber.value) {
     evt.preventDefault();
+    console.log('Заполните все поля')
   }
 });
 
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (form.classList.contains("modal-open")) {
-      evt.preventDefault();
-      form.classList.remove("modal-open");
-    }
+      form.classList.toggle('modal-hidden');
+      form.classList.toggle('modal-open');
+    
   }
 });
