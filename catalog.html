@@ -15,7 +15,7 @@
       <nav class="main-navigation">
         <div class="wrapper-navigation">
           <a class="logo" href="index.html">
-            <img src="img/logo-index.png" width="138" height="70" alt="Логотип Sedona">
+            <img src="img/logo-index.svg" width="138" height="70" alt="Логотип Sedona">
           </a>
           <ul class="page-menu-list">
             <li class="page-menu-item page-menu-left">
@@ -27,7 +27,7 @@
             <li class="page-menu-item page-menu-right">
               <a href="blank.html">Карта штата</a>
             </li>
-            <li class="page-menu-item page-menu-right current">
+            <li class="page-menu-item page-menu-right menu-item-current">
               <a href="catalog.html">Гостиницы</a>
             </li>
           </ul>
@@ -68,7 +68,7 @@
                 <label for="filter-motel">Мотель</label>
               </li>
               <li class="housing-item filters-item">
-                <input class="filter-input-checkbox visually-hidden" disabled type="checkbox" name="apartments" id="filter-appartments">
+                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="apartments" id="filter-appartments" checked>
                 <label for="filter-appartments">Апартаменты</label>
               </li>
             </ul>
@@ -100,7 +100,7 @@
                 <li class="sorting-item">
                   <span>Сортировка:</span>
                 </li>
-                <li class="sorting-item">
+                <li class="sorting-item-current">
                   <a href="#">По цене</a>
                 </li>
                 <li class="sorting-item">
@@ -118,7 +118,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="arrow" href="#">
+                  <a class="arrow arrow-current" href="#">
                     <span class="visually-hidden">По убыванию</span>
                     &#9660;
                   </a>
@@ -137,11 +137,11 @@
                   <div class="column">
                     <div class="column-left">
                       <span>Гостиница</span>
-                      <button class="button button-more">Подробнее</button>
+                      <a href="blank.html" class="button button-more">Подробнее</a>
                     </div>
                     <div class="column-right">
                       <span>От 4000 Р.</span>
-                      <button class="button button-order">Забронировать</button>
+                      <a href="blank.html" class="button button-order">Забронировать</a>
                     </div>
                   </div>
                 </div>
@@ -168,11 +168,11 @@
                   <div class="column">
                     <div class="column-left">
                       <span>Мотель</span>
-                      <button class="button button-more">Подробнее</button>
+                      <a href="blank.html" class="button button-more">Подробнее</a>
                     </div>
                     <div class="column-right">
                       <span>От 3000 Р.</span>
-                      <button class="button button-order">Забронировать</button>
+                      <a href="blank.html" class="button button-order">Забронировать</a>
                     </div>
                   </div>
                 </div>
@@ -198,11 +198,11 @@
                   <div class="column">
                     <div class="column-left">
                       <span>Апартаменты</span>
-                      <button class="button button-more">Подробнее</button>
+                      <a href="blank.html" class="button button-more">Подробнее</a>
                     </div>
                     <div class="column-right">
                       <span>От 2000 Р.</span>
-                      <button class="button button-order">Забронировать</button>
+                      <a href="blank.html" class="button button-order">Забронировать</a>
                     </div>
                   </div>
                 </div>
@@ -232,22 +232,27 @@
         <ul class="social-list">
           <li class="social-item">
             <a class="social-button social-twitter" href="http://twitter.com">
+              <span class="visually-hidden">Мы в Twitter</span>
             </a>
           </li>
           <li class="social-item">
             <a class="social-button social-facebook" href="http://facebook.com">
+              <span class="visually-hidden">Мы в Facebook</span>
             </a>
           </li>
           <li class="social-item">
             <a class="social-button social-youtube" href="https://youtube.com">
+              <span class="visually-hidden">Мы на Youtube</span>
             </a>
           </li>
         </ul>
         <div class="footer-right">
           <span>Website by</span>
-          <a href="https://htmlacademy.ru">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="website-wrap">
             <span class="visually-hidden">HTML Academy</span>
-            <div class="website"> </div>
+            <img class="website website-black" src="img/logo-htmlacademy-black.svg" width="115" height="41" alt="перейти на сайт HTML Academy">
+            <img class="website website-hover" src="img/logo-htmlacademy-blue.svg" width="115" height="41" alt="перейти на сайт HTML Academy">
+            <img class="website website-active" src="img/logo-htmlacademy-gray.svg" width="115" height="41" alt="перейти на сайт HTML Academy">
           </a>
         </div>
       </div>

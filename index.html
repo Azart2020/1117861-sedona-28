@@ -15,10 +15,10 @@
       <nav class="page-nav">
         <div class="wrapper-navigation">
           <a class="logo">
-            <img src="img/logo-index.png" width="138" height="70" alt="Логотип Sedona">
+            <img src="img/logo-index.svg" width="138" height="70" alt="Логотип Sedona">
           </a>
           <ul class="page-menu-list">
-            <li class="page-menu-item page-menu-left ">
+            <li class="page-menu-item page-menu-left menu-item-current">
               <a href="blank.html">Информация</a>
             </li>
             <li class="page-menu-item page-menu-left">
@@ -97,25 +97,25 @@
             <div class="search-house-item input-arrival-date">
               <label for="arrival-date">Дата заезда:</label>
               <input class="input-date" placeholder="24 апреля 2017" id="arrival-date" type="text" name="arrival" required>
-              <button type="button" class="calendar-arrival"></button>
+              <button type="button" class="calendar-arrival" aria-label="Выбрать дату прибытия"></button>
             </div>
             <div class="search-house-item input-departure-date">
               <label for="departure-date">Дата выезда:</label>
               <input class="input-date" placeholder="4 июля 2017" id="departure-date" type="text" name="departure" required>
-              <button type="button" class="calendar-departure"></button>
+              <button type="button" class="calendar-departure" aria-label="Выбрать дату отбытия"></button>
             </div>
             <div class="wrapper-amount">
               <div class="search-house-item amount-left">
                 <label for="adults">Взрослые:</label>
-                <button type="button" class="button button-subtract">&#8211;</button>
+                <button type="button" class="button button-subtract" aria-label="уменьшить количество взрослых">&#8211;</button>
                 <input class="input-number" placeholder="2" id="adults" type="text" name="adults-number" required>
-                <button type="button" class="button button-add">+</button>
+                <button type="button" class="button button-add" aria-label="увеличить количество взрослых">+</button>
               </div>
               <div class="search-house-item amount-right">
                 <label for="childs">Дети:</label>
-                <button type="button" class="button button-subtract">&#8211;</button>
+                <button type="button" class="button button-subtract" aria-label="уменьшить количество детей">&#8211;</button>
                 <input class="input-number" placeholder="0" id="childs" type="text" name="childs-number" required>
-                <button type="button" class="button button-add">+</button>
+                <button type="button" class="button button-add" aria-label="увеличить количество детей">+</button>
               </div>
             </div>
             <button class="button button-search" type="submit">Найти</button>
@@ -138,22 +138,27 @@
         <ul class="social-list">
           <li class="social-item">
             <a class="social-button social-twitter" href="http://twitter.com">
+              <span class="visually-hidden">Мы в Twitter</span>
             </a>
           </li>
           <li class="social-item">
             <a class="social-button social-facebook" href="http://facebook.com">
+              <span class="visually-hidden">Мы в Facebook</span>
             </a>
           </li>
           <li class="social-item">
             <a class="social-button social-youtube" href="https://youtube.com">
+              <span class="visually-hidden">Мы на Youtube</span>
             </a>
           </li>
         </ul>
         <div class="footer-right">
           <span>Website by</span>
-          <a href="https://htmlacademy.ru">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="website-wrap">
             <span class="visually-hidden">HTML Academy</span>
-            <div class="website"></div>
+            <img class="website website-black" src="img/logo-htmlacademy-black.svg" width="115" height="41" alt="перейти на сайт HTML Academy">
+            <img class="website website-hover" src="img/logo-htmlacademy-blue.svg" width="115" height="41" alt="перейти на сайт HTML Academy">
+            <img class="website website-active" src="img/logo-htmlacademy-gray.svg" width="115" height="41" alt="перейти на сайт HTML Academy">
           </a>
         </div>
       </div>
