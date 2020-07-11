@@ -16,6 +16,8 @@
   --basic-light-gray: #666666;
   --basic-extra-gray: #f2f2f2;
   --basic-dark-gray: #ebebeb;
+
+  --basic-soft-silver: #bdbbbc;
   --basic-dark-silver: #ababab;
   --basic-silver: #eeeeee;
   --basic-extra-silver: #e5e5e5;
@@ -106,6 +108,8 @@ input[type="radio"].visually-hidden {
   padding-bottom: 16px;
 }
 
+
+
 .page-menu-left {
   text-align: left;
 }
@@ -136,9 +140,6 @@ input[type="radio"].visually-hidden {
 }
 
 .menu-item-current a {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 26px;
   color: var(--basic-brown);
 }
 
@@ -210,7 +211,16 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+  color: var(--basic-black);
 
+}
+
+.reason-title-blue {
+
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
 }
 
 .reason-item {
@@ -450,6 +460,7 @@ input::placeholder {
 
 .wrapper-amount {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 25px;
 }
@@ -595,6 +606,7 @@ input::placeholder {
 .social-item {
   position: relative;
   margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .social-button {
@@ -671,30 +683,14 @@ input::placeholder {
   margin-left: 8px;
 }
 
-.website-hover,
-.website-active {
-  display: none;
+.website:hover path {
+  fill: var(--basic-blue);
 }
 
-.website-wrap:hover .website-black {
-  display: none;
+.website:active path {
+  fill: var(--basic-soft-silver);
 }
 
-.website-wrap:hover .website-hover {
-  display: inline-block;
-}
-
-.website-wrap:active .website-black {
-  display: none;
-}
-
-.website-wrap:active .website-active {
-  display: inline-block;
-}
-
-.website-wrap:active .website-hover {
-  display: none;
-}
 
 .wrapper {
   width: 1055px;
